@@ -1,0 +1,41 @@
+
+{% extends "layout.njk" %}
+
+{% block content %}
+<section>
+  <div id="table">
+    <table id="temperature">
+      <thead>
+        <th rowspan="2" colspan="4">Temperatura</th>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="col">ID</td>
+          <th scope="col">Data</td>
+          <th scope="col">Hora</td>
+          <th scope="col">Valor</td>
+        </tr>
+        {% for table in tables %}
+        <tr>
+          <td> 
+            {{ table.id }}
+          </td>
+          <td> 
+            {{ table.date }}
+          </td>
+          <td> 
+            {{ table.time }}
+          </td> 
+          <td>
+            {{ table.value }}
+          </td>   
+        </tr>
+        {% endfor %}
+      </tbody>
+      <tfoot>
+                
+      </tfoot>
+    </table>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,57 @@
+td, th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px;
+}
+
+td {
+    text-align: center;
+}
+
+thead th {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+}
+
+tbody th {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+}
+
+tfoot th {
+    text-align: right;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*Estilizando linhas ímpares*/
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+/*Célula com escopo "coluna"*/
+th[scope="col"] {
+    background-color: #696969;
+    color: #fff;
+}
+
+/*Célula com escopo "linha" de valor*/
+th[scope="row"] {
+    background-color: #d7d9f2;
+}
+
+
+table {
+    border-collapse: collapse; /*Elimine os espaços entre as colunas da linha*/
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 3px; /*Aumenta ou diminui o espaço entre os caracteres*/
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16pt;
+}
+
+tfoot th .button {
+    font-family: 'Quicksand', sans-serif;
+    border: 2px solid rgb(200, 200, 200);
+    font-size:16pt;
+    border-radius: 20%;
+}
